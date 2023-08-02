@@ -8,14 +8,31 @@
 
   <ItemGroup>
     <None Remove="Repositories\" />
+    <None Remove="CQRS\" />
+    <None Remove="CQRS\Commands\" />
+    <None Remove="CQRS\Commands\Product\" />
+    <None Remove="CQRS\Commands\Person\" />
+    <None Remove="CQRS\Commands\Category\" />
+    <None Remove="CQRS\Commands\Product\CreateProduct\" />
+    <None Remove="CQRS\Commands\Person\CreatePerson\" />
+    <None Remove="CQRS\Commands\Category\CreateCategory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
+    <Folder Include="CQRS\" />
+    <Folder Include="CQRS\Commands\" />
+    <Folder Include="CQRS\Commands\Product\" />
+    <Folder Include="CQRS\Commands\Person\" />
+    <Folder Include="CQRS\Commands\Category\" />
+    <Folder Include="CQRS\Commands\Product\CreateProduct\" />
+    <Folder Include="CQRS\Commands\Person\CreatePerson\" />
+    <Folder Include="CQRS\Commands\Category\CreateCategory\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
   </ItemGroup>
 </Project>

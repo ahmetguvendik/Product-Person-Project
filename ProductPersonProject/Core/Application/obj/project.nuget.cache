@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "T8u3sbFRRfsOshfMLK6jNCZSGqodR3/oZt10dQm3myK9xDhNrcaocfWzYTwjiZ1vAMSd2/Vtf/uJDvRwQXzGog==",
+  "dgSpecHash": "1NcqR6SgkYP+GwfxYONUu6Ud1eZgPmJH/dRCMhFsyqARMnaiJAM2OMWcPO2mIIdfWVCiUwD1+ltOACtl4cUgcg==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Core/Application/Application.csproj",
   "expectedPackageFiles": [
+    "/Users/ahmetguvendik/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",

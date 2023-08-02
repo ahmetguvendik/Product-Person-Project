@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RyBoxxCmcTb60jVOyUHOeaHe7deLUAhy0P5fsoHBPlx1HmUxtbzQLLgVCRMcUs102YvQvVZ0pQxxs5ExO5WB0A==",
+  "dgSpecHash": "VrioxUgKp6cLuH365g8sRVDjogPP9GlVPLOpVh09Fo5FffJRXmZOkC6FBBgZxsQHQ2aTAdPRQGap2Z0q2DEhsg==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Infrastructure/Persistance/Persistance.csproj",
   "expectedPackageFiles": [
     "/Users/ahmetguvendik/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",

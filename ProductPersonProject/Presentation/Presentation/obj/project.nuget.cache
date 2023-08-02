@@ -1,8 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "ldYBGySIHHzU3B9gNvBNpp1Q0dUFjfh3dOmFvj2KgGH0mjIVFJGLR9LBHUlDpTvclbENLYCoTl0ADyAid6K8Ew==",
+  "dgSpecHash": "T8l+yx8BVlddawKd0yClrKUvd8glscbphfJbfwMg+9zs4kmvgjGMOCQi66qtVQp5QURKs4gU/tD1zPlRkFc9qA==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Presentation/Presentation/Presentation.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ahmetguvendik/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.5/microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/npgsql/7.0.4/npgsql.7.0.4.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.4/npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512"
+  ],
   "logs": []
 }
