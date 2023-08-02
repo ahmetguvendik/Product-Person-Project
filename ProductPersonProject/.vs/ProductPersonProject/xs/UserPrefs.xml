@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{A5EA0456-E208-421A-A0C0-9A3DA96C47C4}|https">
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Application/Repositories/ICategoryReadRepository.cs">
+    <Files>
+      <File FileName="Core/Domain/Entities/Product.cs" Line="5" Column="3" />
+      <File FileName="Core/Domain/Entities/Person.cs" Line="4" Column="34" />
+      <File FileName="Core/Domain/Entities/Category.cs" Line="4" Column="36" />
+      <File FileName="Infrastructure/Persistance/Contexts/ProductDbContext.cs" Line="13" Column="56" />
+      <File FileName="Infrastructure/Persistance/DesignTimeDbContext.cs" />
+      <File FileName="Core/Application/Repositories/IRepository.cs" Line="10" Column="32" />
+      <File FileName="Core/Domain/Entities/BaseEntity.cs" Line="7" Column="36" />
+      <File FileName="Core/Application/Repositories/IWriteRepository.cs" Line="12" Column="6" />
+      <File FileName="Core/Application/Repositories/IReadRepository.cs" Line="9" Column="36" />
+      <File FileName="Core/Application/Repositories/IProductWriteRepository.cs" Line="7" Column="67" />
+      <File FileName="Core/Application/Repositories/IProductReadRepository.cs" Line="6" Column="67" />
+      <File FileName="Core/Application/Repositories/IPersonReadRepository.cs" Line="6" Column="65" />
+      <File FileName="Core/Application/Repositories/IPersonWriteRepository.cs" Line="6" Column="67" />
+      <File FileName="Core/Application/Repositories/ICategoryWriteRepository.cs" Line="6" Column="71" />
+      <File FileName="Core/Application/Repositories/ICategoryReadRepository.cs" Line="10" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProductPersonProject" expanded="True" selected="True">
+            <Node name="Core" expanded="True">
+              <Node name="Application" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Infrastructure" expanded="True">
+              <Node name="Persistance" expanded="True">
+                <Node name="Contexts" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
