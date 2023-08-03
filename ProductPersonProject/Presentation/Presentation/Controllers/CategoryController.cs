@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.CQRS.Commands.Category.CreateCategory;
+using Application.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,13 +14,16 @@ namespace Presentation.Controllers
     public class CategoryController : Controller
     {
         private readonly IMediator _mediator;
-        public CategoryController(IMediator mediator)
+        private readonly ICategoryReadRepository _categoryReadRepository;
+        public CategoryController(IMediator mediator,ICategoryReadRepository categoryReadRepository)
         {
             _mediator = mediator;
+            _categoryReadRepository = categoryReadRepository;
         }
         public IActionResult GetCategory()
         {
-            return View();
+            var categories = _categoryReadRepository.GetAll();
+            return View(categories);
         }
 
         public IActionResult AddCategory()

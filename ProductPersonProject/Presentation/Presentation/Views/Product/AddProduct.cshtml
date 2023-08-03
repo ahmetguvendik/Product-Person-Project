@@ -1,0 +1,47 @@
+﻿@using Application.CQRS.Commands.Product.CreateProduct
+@model CreateProductCommandResponse
+
+<form asp-action="AddProduct" asp-controller="Product" method="post">
+
+    <div class="mb-3">
+        <label>
+            Product Name:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Name></span>
+        <input type="text" asp-for=@Model.Name class=form-control />
+    </div>
+
+    <br />
+    <div class="mb-3">
+        <label>
+            Product SeriNo:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.SeriNo></span>
+        <input type="text" asp-for=@Model.SeriNo class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Product Info:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Info></span>
+        <input type="text" asp-for=@Model.Info class=form-control />
+    </div>
+
+    <br />
+
+        @Html.DropDownListFor(x=>x.CategoryId,(IEnumerable<SelectListItem>)ViewBag.Categories,"--Select Category--")  
+
+    <div>
+        <button>
+            Kaydet
+        </button>
+    </div>
+
+    <div>
+        @ViewBag.ErrorMessage
+    </div>
+
+</form>

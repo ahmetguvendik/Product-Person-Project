@@ -1,6 +1,8 @@
 ﻿<Properties StartupConfiguration="{A5EA0456-E208-421A-A0C0-9A3DA96C47C4}|https">
-  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Persistance/ServiceRegistration.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/ProductController.cs">
     <Files>
       <File FileName="Core/Domain/Entities/Product.cs" />
       <File FileName="Core/Domain/Entities/Person.cs" />
@@ -16,45 +18,66 @@
       <File FileName="Core/Application/Repositories/IPersonReadRepository.cs" />
       <File FileName="Core/Application/Repositories/IPersonWriteRepository.cs" />
       <File FileName="Core/Application/Repositories/ICategoryWriteRepository.cs" />
-      <File FileName="Core/Application/Repositories/ICategoryReadRepository.cs" Line="12" Column="1" />
-      <File FileName="Infrastructure/Persistance/Repositories/WriteRepository.cs" Line="31" Column="22" />
-      <File FileName="Infrastructure/Persistance/Repositories/ReadRepository.cs" Line="27" Column="6" />
-      <File FileName="Infrastructure/Persistance/Repositories/ProductWriteRepository.cs" Line="12" Column="1" />
-      <File FileName="Infrastructure/Persistance/Repositories/ProductReadRepository.cs" Line="11" Column="10" />
-      <File FileName="Infrastructure/Persistance/Repositories/CategoryWriteRepository.cs" Line="10" Column="33" />
-      <File FileName="Infrastructure/Persistance/Repositories/CategoryReadRepository.cs" Line="11" Column="10" />
-      <File FileName="Infrastructure/Persistance/Repositories/PersonWriteRepository.cs" Line="10" Column="39" />
-      <File FileName="Infrastructure/Persistance/Repositories/PersonReadRepository.cs" Line="10" Column="38" />
-      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" Line="6" Column="41" />
-      <File FileName="Presentation/Presentation/Controllers/ProductController.cs" Line="21" Column="27" />
-      <File FileName="Presentation/Presentation/Controllers/CategoryController.cs" Line="34" Column="35" />
-      <File FileName="Presentation/Presentation/Controllers/PersonController.cs" Line="21" Column="27" />
-      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandRequest.cs" Line="8" Column="36" />
-      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandResponse.cs" Line="6" Column="21" />
-      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandHandler.cs" Line="29" Column="2" />
-      <File FileName="Presentation/Presentation/Views/Category/AddCategory.cshtml" Line="4" Column="22" />
-      <File FileName="Core/Application/ServiceRegistration.cs" Line="13" Column="6" />
-      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" Line="14" Column="150" />
-      <File FileName="Presentation/Presentation/Program.cs" Line="10" Column="1" />
+      <File FileName="Core/Application/Repositories/ICategoryReadRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/WriteRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/ReadRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/ProductWriteRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/ProductReadRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/CategoryWriteRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/CategoryReadRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/PersonWriteRepository.cs" />
+      <File FileName="Infrastructure/Persistance/Repositories/PersonReadRepository.cs" />
+      <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" />
+      <File FileName="Presentation/Presentation/Controllers/ProductController.cs" Line="45" Column="64" />
+      <File FileName="Presentation/Presentation/Controllers/CategoryController.cs" />
+      <File FileName="Presentation/Presentation/Controllers/PersonController.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandRequest.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandResponse.cs" />
+      <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandHandler.cs" />
+      <File FileName="Presentation/Presentation/Views/Category/AddCategory.cshtml" Line="20" Column="11" />
+      <File FileName="Core/Application/ServiceRegistration.cs" />
+      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" />
+      <File FileName="Presentation/Presentation/Program.cs" />
+      <File FileName="Presentation/Presentation/Views/Category/GetCategory.cshtml" Line="9" Column="26" />
+      <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandRequest.cs" Line="9" Column="3" />
+      <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandResponse.cs" Line="9" Column="47" />
+      <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandHandler.cs" Line="34" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Product/AddProduct.cshtml" Line="35" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ProductPersonProject" expanded="True">
             <Node name="Core" expanded="True">
-              <Node name="Application" expanded="True" />
+              <Node name="Application" expanded="True">
+                <Node name="CQRS" expanded="True">
+                  <Node name="Commands" expanded="True">
+                    <Node name="Category" expanded="True" />
+                    <Node name="Product" expanded="True">
+                      <Node name="CreateProduct" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Domain" expanded="True">
+                <Node name="Entities" expanded="True" />
+              </Node>
             </Node>
             <Node name="Infrastructure" expanded="True">
               <Node name="Persistance" expanded="True">
                 <Node name="Repositories" expanded="True" />
-                <Node name="ServiceRegistration.cs" selected="True" />
               </Node>
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="Presentation" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="ProductController.cs" selected="True" />
+                </Node>
                 <Node name="Views" expanded="True">
                   <Node name="Category" expanded="True" />
+                  <Node name="Product" expanded="True" />
+                  <Node name="Shared" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -63,10 +86,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

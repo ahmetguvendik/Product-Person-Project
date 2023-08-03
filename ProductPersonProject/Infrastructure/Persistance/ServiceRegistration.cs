@@ -12,7 +12,6 @@ namespace Persistance
         public static void AddPersistanceService(this IServiceCollection collection)
         {
             collection.AddDbContext<ProductDbContext>(opt => opt.UseNpgsql("User ID=postgres;Password=123456;Host=localhost;Port=5432;Database=ProductDb;"));
-        
             collection.AddScoped<IProductWriteRepository, ProductWriteRepository>();
             collection.AddScoped<IProductReadRepository, ProductReadRepository>();
             collection.AddScoped<ICategoryWriteRepository, CategoryWriteRepository>();
