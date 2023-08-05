@@ -1,6 +1,7 @@
 ﻿using System;
 using Application.CQRS.Commands.Product.CreateProduct;
 using Application.Repositories;
+using Application.Services;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -13,15 +14,19 @@ namespace Presentation.Controllers
     public class ProductController : Controller
     {
         private readonly ICategoryReadRepository _categoryReadRepository;
+        private readonly IProductService _productService;
         private readonly IMediator _mediator;
-        public ProductController(ICategoryReadRepository categoryReadRepository,IMediator mediator)
+        public ProductController(ICategoryReadRepository categoryReadRepository,IMediator mediator,IProductService productService)
         {
             _categoryReadRepository = categoryReadRepository;
             _mediator = mediator;
+            _productService = productService;
+          
         }
         public IActionResult GetProduct()
         {
-            return View();
+           var product =  _productService.GetProductCategory();
+            return View(product);
         }
 
         public IActionResult AddProduct()
@@ -42,8 +47,8 @@ namespace Presentation.Controllers
         public async Task<IActionResult> AddProduct(CreateProductCommandRequest model)
         {
             var response = await _mediator.Send(model);
-            return RedirectToAction("GetCategory", "Category");
-        }
+            return RedirectToAction("GetProduct", "Product");
+        }   
     }
 }
 

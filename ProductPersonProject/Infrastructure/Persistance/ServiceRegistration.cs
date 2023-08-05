@@ -1,9 +1,11 @@
 ﻿using System;
 using Application.Repositories;
+using Application.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Persistance.Contexts;
 using Persistance.Repositories;
+using Persistance.Services;
 
 namespace Persistance
 {
@@ -18,6 +20,8 @@ namespace Persistance
             collection.AddScoped<ICategoryReadRepository, CategoryReadRepository>();
             collection.AddScoped<IPersonWriteRepository, PersonWriteRepository>();
             collection.AddScoped<IPersonReadRepository, PersonReadRepository>();
+            collection.AddScoped<IProductService, ProductService>();
+            collection.AddScoped<IPersonService, PersonService>();
         }
     }
 }

@@ -1,0 +1,48 @@
+﻿@using Application.CQRS.Commands.Person.CreatePerson
+@model CreatePersonCommandResponse
+
+<form asp-action="AddPerson" asp-controller="Person" method="post">
+
+    <div class="mb-3">
+        <label>
+            Person Name:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Name></span>
+        <input type="text" asp-for=@Model.Name class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Person Surame:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.SurName></span>
+        <input type="text" asp-for=@Model.SurName class=form-control />
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label>
+            Person Info:
+        </label>
+        <span class="text-danger" asp-validation-for=@Model.Info></span>
+        <input type="text" asp-for=@Model.Info class=form-control />
+    </div>
+
+    <br />
+
+    @Html.DropDownListFor(x => x.ProductId, (IEnumerable<SelectListItem>)ViewBag.Categories, "--Select Product--")
+
+    <div>
+        <button>
+            Kaydet
+        </button>
+    </div>
+
+    <div>
+        @ViewBag.ErrorMessage
+    </div>
+
+</form>

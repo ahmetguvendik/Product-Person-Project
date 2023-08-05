@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.CQRS.Commands.Category.CreateCategory;
+﻿using Application.CQRS.Commands.Category.CreateCategory;
 using Application.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -35,7 +31,7 @@ namespace Presentation.Controllers
         public async Task<IActionResult> AddCategory(CreateCategoryCommandRequest model)
         {
             var response = await _mediator.Send(model);
-            return View(response);
+            return RedirectToAction("GetCategory", "Category"); 
         }
 
     }

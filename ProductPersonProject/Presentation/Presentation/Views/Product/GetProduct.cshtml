@@ -1,0 +1,28 @@
+﻿@using Application.ViewModels
+@model IQueryable<VM_Product_Category>
+
+<table class="mt-4 table table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>SeriNo</th>
+            <th>Info</th>
+            <th>Verildimi</th>
+            <th>Category</th>   
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.Name</th>
+                <th>@item.SeriNo</th>
+                <th>@item.Info</th>
+                <th>@item.Verildimi</th>
+                <th>@item.CategoryName</th>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
