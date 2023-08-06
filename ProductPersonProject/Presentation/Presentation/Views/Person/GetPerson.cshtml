@@ -18,6 +18,7 @@
                 <th>@item.Surname</th>
                 <th>@item.Info</th>
                 <th>@item.ProductName</th>
+                <th><a asp-action="RemovePerson" asp-controller="Person" asp-route-id=@item.Id>Sil</a></th>
             </tr>
         }
 

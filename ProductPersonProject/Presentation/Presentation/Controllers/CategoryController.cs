@@ -1,4 +1,5 @@
 ﻿using Application.CQRS.Commands.Category.CreateCategory;
+using Application.CQRS.Commands.Category.RemoveCategory;
 using Application.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -32,6 +33,14 @@ namespace Presentation.Controllers
         {
             var response = await _mediator.Send(model);
             return RedirectToAction("GetCategory", "Category"); 
+        }
+
+        public async Task<IActionResult> RemoveCategory(string id)
+        {
+            var removedCategory = new RemoveCategoryCommandRequest();
+            removedCategory.Id = id;
+            await _mediator.Send(removedCategory);
+            return RedirectToAction("GetCategory", "Category");
         }
 
     }

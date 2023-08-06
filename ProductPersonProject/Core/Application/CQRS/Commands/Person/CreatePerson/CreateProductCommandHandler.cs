@@ -7,9 +7,11 @@ namespace Application.CQRS.Commands.Person.CreatePerson
 	public class CreateProductCommandHandler : IRequestHandler<CreatePersonCommandRequest,CreatePersonCommandResponse>
 	{
         private readonly IPersonWriteRepository _personWriteRepository;
-		public CreateProductCommandHandler(IPersonWriteRepository personWriteRepository)
+        private readonly IProductReadRepository _productReadRepository;
+		public CreateProductCommandHandler(IPersonWriteRepository personWriteRepository,IProductReadRepository productReadRepository)
 		{
             _personWriteRepository = personWriteRepository;
+            _productReadRepository = productReadRepository;
 		}
 
         public async Task<CreatePersonCommandResponse> Handle(CreatePersonCommandRequest request, CancellationToken cancellationToken)
@@ -20,6 +22,8 @@ namespace Application.CQRS.Commands.Person.CreatePerson
             person.Surname = request.SurName;
             person.Info = request.Info;
             person.ProductId = request.ProductId;
+            var product = await _productReadRepository.GetById(request.ProductId);
+            product.Verildimi = true;
             await _personWriteRepository.AddAsync(person);
             await _personWriteRepository.SaveAsync();
             return new CreatePersonCommandResponse()

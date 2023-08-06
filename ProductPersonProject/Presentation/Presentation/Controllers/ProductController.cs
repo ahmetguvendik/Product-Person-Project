@@ -1,5 +1,7 @@
 ﻿using System;
+using Application.CQRS.Commands.Person.RemovePerson;
 using Application.CQRS.Commands.Product.CreateProduct;
+using Application.CQRS.Commands.Product.RemoveProduct;
 using Application.Repositories;
 using Application.Services;
 using MediatR;
@@ -48,7 +50,15 @@ namespace Presentation.Controllers
         {
             var response = await _mediator.Send(model);
             return RedirectToAction("GetProduct", "Product");
-        }   
+        }
+
+        public async Task<IActionResult> RemoveProduct(string id)
+        {
+            var removedProdut = new RemoveProductCommandRequest();
+            removedProdut.Id = id;
+            await _mediator.Send(removedProdut);
+            return RedirectToAction("GetProduct", "Product");
+        }
     }
 }
 

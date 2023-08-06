@@ -18,6 +18,9 @@
     <None Remove="CQRS\Commands\Category\CreateCategory\" />
     <None Remove="Services\" />
     <None Remove="ViewModels\" />
+    <None Remove="CQRS\Commands\Category\RemoveCategory\" />
+    <None Remove="CQRS\Commands\Person\RemovePerson\" />
+    <None Remove="CQRS\Commands\Product\RemoveProduct\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -31,6 +34,9 @@
     <Folder Include="CQRS\Commands\Category\CreateCategory\" />
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="CQRS\Commands\Category\RemoveCategory\" />
+    <Folder Include="CQRS\Commands\Person\RemovePerson\" />
+    <Folder Include="CQRS\Commands\Product\RemoveProduct\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

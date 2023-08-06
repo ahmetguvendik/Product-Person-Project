@@ -20,6 +20,7 @@ namespace Persistance.Services
             on p.CategoryId equals c.Id
                         select new VM_Product_Category
                         {
+                            Id = p.Id,
                            Name = p.Name,
                            Info = p.Info,
                            SeriNo = p.SeriNo,

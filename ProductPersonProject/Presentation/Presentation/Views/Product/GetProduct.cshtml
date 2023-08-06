@@ -20,6 +20,7 @@
                 <th>@item.Info</th>
                 <th>@item.Verildimi</th>
                 <th>@item.CategoryName</th>
+                <th><a asp-action="RemoveProduct" asp-controller="Product" asp-route-id=@item.Id>Sil</a></th>
             </tr>
         }
 

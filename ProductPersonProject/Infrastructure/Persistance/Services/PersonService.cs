@@ -20,6 +20,7 @@ namespace Persistance.Services
             on p.ProductId equals product.Id
                         select new VM_Person_Product
                         {
+                            Id = p.Id,
                             Name = p.Name,
                             Surname = p.Surname,
                             Info = p.Info,

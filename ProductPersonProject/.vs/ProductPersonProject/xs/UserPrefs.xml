@@ -1,8 +1,5 @@
 ﻿<Properties StartupConfiguration="{A5EA0456-E208-421A-A0C0-9A3DA96C47C4}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Views/Person/GetPerson.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/ProductController.cs">
     <Files>
       <File FileName="Core/Domain/Entities/Product.cs" />
       <File FileName="Core/Domain/Entities/Person.cs" />
@@ -11,12 +8,12 @@
       <File FileName="Infrastructure/Persistance/DesignTimeDbContext.cs" />
       <File FileName="Core/Application/Repositories/IRepository.cs" />
       <File FileName="Core/Domain/Entities/BaseEntity.cs" />
-      <File FileName="Core/Application/Repositories/IWriteRepository.cs" Line="1" Column="1" />
-      <File FileName="Core/Application/Repositories/IReadRepository.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/Repositories/IWriteRepository.cs" />
+      <File FileName="Core/Application/Repositories/IReadRepository.cs" />
       <File FileName="Core/Application/Repositories/IProductWriteRepository.cs" />
       <File FileName="Core/Application/Repositories/IProductReadRepository.cs" />
       <File FileName="Core/Application/Repositories/IPersonReadRepository.cs" />
-      <File FileName="Core/Application/Repositories/IPersonWriteRepository.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/Repositories/IPersonWriteRepository.cs" />
       <File FileName="Core/Application/Repositories/ICategoryWriteRepository.cs" />
       <File FileName="Core/Application/Repositories/ICategoryReadRepository.cs" />
       <File FileName="Infrastructure/Persistance/Repositories/WriteRepository.cs" />
@@ -28,33 +25,42 @@
       <File FileName="Infrastructure/Persistance/Repositories/PersonWriteRepository.cs" />
       <File FileName="Infrastructure/Persistance/Repositories/PersonReadRepository.cs" />
       <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" />
-      <File FileName="Presentation/Presentation/Controllers/ProductController.cs" Line="48" Column="10" />
-      <File FileName="Presentation/Presentation/Controllers/CategoryController.cs" Line="1" Column="7" />
-      <File FileName="Presentation/Presentation/Controllers/PersonController.cs" Line="31" Column="33" />
+      <File FileName="Presentation/Presentation/Controllers/ProductController.cs" Line="60" Column="62" />
+      <File FileName="Presentation/Presentation/Controllers/CategoryController.cs" Line="44" Column="10" />
+      <File FileName="Presentation/Presentation/Controllers/PersonController.cs" Line="58" Column="8" />
       <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandHandler.cs" />
-      <File FileName="Presentation/Presentation/Views/Category/AddCategory.cshtml" Line="1" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Category/AddCategory.cshtml" />
       <File FileName="Core/Application/ServiceRegistration.cs" />
-      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" Line="24" Column="67" />
-      <File FileName="Presentation/Presentation/Program.cs" Line="9" Column="1" />
-      <File FileName="Presentation/Presentation/Views/Category/GetCategory.cshtml" Line="1" Column="1" />
-      <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandRequest.cs" Line="11" Column="3" />
+      <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" />
+      <File FileName="Presentation/Presentation/Program.cs" />
+      <File FileName="Presentation/Presentation/Views/Category/GetCategory.cshtml" Line="18" Column="34" />
+      <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandHandler.cs" />
-      <File FileName="Presentation/Presentation/Views/Product/AddProduct.cshtml" Line="4" Column="29" />
-      <File FileName="Presentation/Presentation/Views/Product/GetProduct.cshtml" Line="1" Column="1" />
-      <File FileName="Core/Application/Services/IProductService.cs" Line="8" Column="57" />
-      <File FileName="Core/Application/ViewModels/VM_Product_Category.cs" Line="6" Column="2" />
-      <File FileName="Infrastructure/Persistance/Services/ProductService.cs" Line="18" Column="11" />
-      <File FileName="Presentation/Presentation/Views/Person/GetPerson.cshtml" Line="10" Column="33" />
-      <File FileName="Presentation/Presentation/Views/Person/AddPerson.cshtml" Line="4" Column="52" />
+      <File FileName="Presentation/Presentation/Views/Product/AddProduct.cshtml" />
+      <File FileName="Presentation/Presentation/Views/Product/GetProduct.cshtml" Line="23" Column="74" />
+      <File FileName="Core/Application/Services/IProductService.cs" />
+      <File FileName="Core/Application/ViewModels/VM_Product_Category.cs" Line="6" Column="34" />
+      <File FileName="Infrastructure/Persistance/Services/ProductService.cs" Line="23" Column="39" />
+      <File FileName="Presentation/Presentation/Views/Person/GetPerson.cshtml" Line="20" Column="43" />
+      <File FileName="Presentation/Presentation/Views/Person/AddPerson.cshtml" />
       <File FileName="Core/Application/CQRS/Commands/Person/CreatePerson/CreatePersonCommandRequest.cs" Line="8" Column="2" />
       <File FileName="Core/Application/CQRS/Commands/Person/CreatePerson/CreatePersonCommandResponse.cs" Line="9" Column="46" />
-      <File FileName="Core/Application/CQRS/Commands/Person/CreatePerson/CreateProductCommandHandler.cs" Line="31" Column="15" />
-      <File FileName="Core/Application/Services/IPersonService.cs" Line="8" Column="53" />
-      <File FileName="Core/Application/ViewModels/VM_Person_Product.cs" Line="9" Column="49" />
-      <File FileName="Infrastructure/Persistance/Services/PersonService.cs" Line="26" Column="56" />
+      <File FileName="Core/Application/CQRS/Commands/Person/CreatePerson/CreateProductCommandHandler.cs" Line="22" Column="46" />
+      <File FileName="Core/Application/Services/IPersonService.cs" />
+      <File FileName="Core/Application/ViewModels/VM_Person_Product.cs" Line="11" Column="49" />
+      <File FileName="Infrastructure/Persistance/Services/PersonService.cs" Line="23" Column="39" />
+      <File FileName="Core/Application/CQRS/Commands/Category/RemoveCategory/RemoveCategoryCommandRequest.cs" Line="8" Column="34" />
+      <File FileName="Core/Application/CQRS/Commands/Category/RemoveCategory/RemoveCategoryCommandResponse.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/Category/RemoveCategory/RemoveCategoryCommandHandler.cs" Line="17" Column="13" />
+      <File FileName="Core/Application/CQRS/Commands/Person/RemovePerson/RemovePersonCommandHandler.cs" Line="20" Column="54" />
+      <File FileName="Core/Application/CQRS/Commands/Person/RemovePerson/RemovePersonCommandRequest.cs" Line="9" Column="41" />
+      <File FileName="Core/Application/CQRS/Commands/Person/RemovePerson/RemovePersonCommandResponse.cs" Line="6" Column="3" />
+      <File FileName="Core/Application/CQRS/Commands/Product/RemoveProduct/RemoveProductCommandRequest.cs" Line="8" Column="34" />
+      <File FileName="Core/Application/CQRS/Commands/Product/RemoveProduct/RemoveProductCommandResponse.cs" Line="1" Column="1" />
+      <File FileName="Core/Application/CQRS/Commands/Product/RemoveProduct/RemoveProductCommandHandler.cs" Line="16" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -63,7 +69,15 @@
             <Node name="Core" expanded="True">
               <Node name="Application" expanded="True">
                 <Node name="CQRS" expanded="True">
-                  <Node name="Commands" expanded="True" />
+                  <Node name="Commands" expanded="True">
+                    <Node name="Person" expanded="True">
+                      <Node name="CreatePerson" expanded="True" />
+                      <Node name="RemovePerson" expanded="True" />
+                    </Node>
+                    <Node name="Product" expanded="True">
+                      <Node name="RemoveProduct" expanded="True" />
+                    </Node>
+                  </Node>
                 </Node>
                 <Node name="Services" expanded="True" />
                 <Node name="ViewModels" expanded="True" />
@@ -80,12 +94,12 @@
             </Node>
             <Node name="Presentation" expanded="True">
               <Node name="Presentation" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="ProductController.cs" selected="True" />
+                </Node>
                 <Node name="Views" expanded="True">
                   <Node name="Category" expanded="True" />
-                  <Node name="Person" expanded="True">
-                    <Node name="GetPerson.cshtml" selected="True" />
-                  </Node>
+                  <Node name="Person" expanded="True" />
                   <Node name="Product" expanded="True" />
                 </Node>
               </Node>
@@ -95,8 +109,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

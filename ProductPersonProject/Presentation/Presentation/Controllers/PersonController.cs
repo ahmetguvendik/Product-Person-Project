@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.CQRS.Commands.Category.RemoveCategory;
 using Application.CQRS.Commands.Person.CreatePerson;
+using Application.CQRS.Commands.Person.RemovePerson;
 using Application.Repositories;
 using Application.Services;
 using MediatR;
@@ -50,6 +52,14 @@ namespace Presentation.Controllers
         public async Task<IActionResult> AddPerson(CreatePersonCommandRequest model)
         {
             await _mediator.Send(model);
+            return RedirectToAction("GetPerson", "Person");
+        }
+
+        public async Task<IActionResult> RemovePerson(string id)
+        {
+            var removedPerson = new RemovePersonCommandRequest();
+            removedPerson.Id = id;
+            await _mediator.Send(removedPerson);
             return RedirectToAction("GetPerson", "Person");
         }
     }
