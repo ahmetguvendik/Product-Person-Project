@@ -1,6 +1,9 @@
 ﻿@using Application.CQRS.Commands.Category.CreateCategory
 @model CreateCategoryCommandResponse
 
+
+@Html.Action()
+
 <form asp-action="AddCategory" asp-controller="Category" method="post">
 
     <div class="mb-3">
