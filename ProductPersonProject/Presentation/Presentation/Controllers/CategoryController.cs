@@ -1,5 +1,6 @@
 ﻿using Application.CQRS.Commands.Category.CreateCategory;
 using Application.CQRS.Commands.Category.RemoveCategory;
+using Application.CQRS.Queries.Category.GetAllCategory;
 using Application.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -11,15 +12,13 @@ namespace Presentation.Controllers
     public class CategoryController : Controller
     {
         private readonly IMediator _mediator;
-        private readonly ICategoryReadRepository _categoryReadRepository;
-        public CategoryController(IMediator mediator,ICategoryReadRepository categoryReadRepository)
+        public CategoryController(IMediator mediator)
         {
             _mediator = mediator;
-            _categoryReadRepository = categoryReadRepository;
         }
-        public IActionResult GetCategory()
+        public async Task<IActionResult> GetCategory(GetAllCategoryQueryRequest model)
         {
-            var categories = _categoryReadRepository.GetAll();
+            var categories = await _mediator.Send(model);
             return View(categories);
         }
 

@@ -21,6 +21,13 @@
     <None Remove="CQRS\Commands\Category\RemoveCategory\" />
     <None Remove="CQRS\Commands\Person\RemovePerson\" />
     <None Remove="CQRS\Commands\Product\RemoveProduct\" />
+    <None Remove="CQRS\Queries\" />
+    <None Remove="CQRS\Queries\Category\" />
+    <None Remove="CQRS\Queries\Category\GetAllCategory\" />
+    <None Remove="CQRS\Queries\Person\" />
+    <None Remove="CQRS\Queries\Person\GetPersonProduct\" />
+    <None Remove="CQRS\Queries\Product\" />
+    <None Remove="CQRS\Queries\Product\GetAllProduct\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -37,6 +44,13 @@
     <Folder Include="CQRS\Commands\Category\RemoveCategory\" />
     <Folder Include="CQRS\Commands\Person\RemovePerson\" />
     <Folder Include="CQRS\Commands\Product\RemoveProduct\" />
+    <Folder Include="CQRS\Queries\" />
+    <Folder Include="CQRS\Queries\Category\" />
+    <Folder Include="CQRS\Queries\Category\GetAllCategory\" />
+    <Folder Include="CQRS\Queries\Person\" />
+    <Folder Include="CQRS\Queries\Person\GetPersonProduct\" />
+    <Folder Include="CQRS\Queries\Product\" />
+    <Folder Include="CQRS\Queries\Product\GetAllProduct\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

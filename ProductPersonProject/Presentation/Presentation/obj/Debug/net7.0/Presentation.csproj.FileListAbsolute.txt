@@ -43,6 +43,3 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Presentation/Presentation/obj/Debug/net7.0/Presentation.csproj.CopyComplete
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Presentation/Presentation/bin/Debug/net7.0/MediatR.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Presentation/Presentation/bin/Debug/net7.0/MediatR.Contracts.dll
-/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Presentation/Presentation/bin/Debug/net7.0/Microsoft.DotNet.PlatformAbstractions.dll
-/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Presentation/Presentation/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
-/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/ProductPersonProject/Presentation/Presentation/bin/Debug/net7.0/Newtonsoft.Json.dll

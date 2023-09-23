@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.CQRS.Commands.Category.RemoveCategory;
-using Application.CQRS.Commands.Person.CreatePerson;
+﻿using Application.CQRS.Commands.Person.CreatePerson;
 using Application.CQRS.Commands.Person.RemovePerson;
+using Application.CQRS.Queries.Person.GetPersonProduct;
+using Application.CQRS.Queries.Product.GetAllProduct;
 using Application.Repositories;
-using Application.Services;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -19,23 +15,19 @@ namespace Presentation.Controllers
     public class PersonController : Controller
     {
         private readonly IMediator _mediator;
-        private readonly IProductReadRepository _productReadRepository;
-        private readonly IPersonService _personService;
-        public PersonController(IMediator mediator,IProductReadRepository productReadRepository,IPersonService personService)
+        public PersonController(IMediator mediator)
         {
                 _mediator = mediator;
-                _productReadRepository = productReadRepository;
-                _personService = personService;
         }   
-        public IActionResult GetPerson()
+        public async Task<IActionResult> GetPerson(GetPersonProductQueryRequest model)
         {
-            var people = _personService.GetPersonProduct();
+            var people = await _mediator.Send(model);
             return View(people);
         }
 
-        public IActionResult AddPerson()
+        public async Task<IActionResult> AddPerson(GetAllProductQueryRequest model)
         {
-            var products = _productReadRepository.GetAll();
+            var products = await _mediator.Send(model);
             List<SelectListItem> values = (from c in products.ToList()
                                            select new SelectListItem
                                            {
