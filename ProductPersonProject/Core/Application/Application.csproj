@@ -28,6 +28,7 @@
     <None Remove="CQRS\Queries\Person\GetPersonProduct\" />
     <None Remove="CQRS\Queries\Product\" />
     <None Remove="CQRS\Queries\Product\GetAllProduct\" />
+    <None Remove="CQRS\Queries\Product\GetProductCategory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -51,6 +52,7 @@
     <Folder Include="CQRS\Queries\Person\GetPersonProduct\" />
     <Folder Include="CQRS\Queries\Product\" />
     <Folder Include="CQRS\Queries\Product\GetAllProduct\" />
+    <Folder Include="CQRS\Queries\Product\GetProductCategory\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

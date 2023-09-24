@@ -1,5 +1,8 @@
 ﻿<Properties StartupConfiguration="{A5EA0456-E208-421A-A0C0-9A3DA96C47C4}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Views/_ViewImports.cshtml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Presentation/Presentation/Controllers/CategoryController.cs">
     <Files>
       <File FileName="Core/Domain/Entities/Product.cs" />
       <File FileName="Core/Domain/Entities/Person.cs" />
@@ -25,13 +28,13 @@
       <File FileName="Infrastructure/Persistance/Repositories/PersonWriteRepository.cs" />
       <File FileName="Infrastructure/Persistance/Repositories/PersonReadRepository.cs" />
       <File FileName="Presentation/Presentation/Views/Shared/_Layout.cshtml" />
-      <File FileName="Presentation/Presentation/Controllers/ProductController.cs" Line="60" Column="62" />
-      <File FileName="Presentation/Presentation/Controllers/CategoryController.cs" />
-      <File FileName="Presentation/Presentation/Controllers/PersonController.cs" />
+      <File FileName="Presentation/Presentation/Controllers/ProductController.cs" Line="22" Column="10" />
+      <File FileName="Presentation/Presentation/Controllers/CategoryController.cs" Line="15" Column="53" />
+      <File FileName="Presentation/Presentation/Controllers/PersonController.cs" Line="33" Column="45" />
       <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/Category/CreateCategory/CreateCategoryCommandHandler.cs" />
-      <File FileName="Presentation/Presentation/Views/Category/AddCategory.cshtml" Line="5" Column="1" />
+      <File FileName="Presentation/Presentation/Views/Category/AddCategory.cshtml" />
       <File FileName="Core/Application/ServiceRegistration.cs" />
       <File FileName="Infrastructure/Persistance/ServiceRegistration.cs" />
       <File FileName="Presentation/Presentation/Program.cs" />
@@ -40,7 +43,7 @@
       <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/Product/CreateProduct/CreateProductCommandHandler.cs" />
       <File FileName="Presentation/Presentation/Views/Product/AddProduct.cshtml" />
-      <File FileName="Presentation/Presentation/Views/Product/GetProduct.cshtml" />
+      <File FileName="Presentation/Presentation/Views/Product/GetProduct.cshtml" Line="2" Column="8" />
       <File FileName="Core/Application/Services/IProductService.cs" />
       <File FileName="Core/Application/ViewModels/VM_Product_Category.cs" />
       <File FileName="Infrastructure/Persistance/Services/ProductService.cs" />
@@ -61,22 +64,26 @@
       <File FileName="Core/Application/CQRS/Commands/Product/RemoveProduct/RemoveProductCommandRequest.cs" />
       <File FileName="Core/Application/CQRS/Commands/Product/RemoveProduct/RemoveProductCommandResponse.cs" />
       <File FileName="Core/Application/CQRS/Commands/Product/RemoveProduct/RemoveProductCommandHandler.cs" />
-      <File FileName="Presentation/Presentation/Views/_ViewImports.cshtml" Line="2" Column="27" />
+      <File FileName="Presentation/Presentation/Views/_ViewImports.cshtml" />
+      <File FileName="Core/Application/CQRS/Queries/Category/GetAllCategory/GetAllCategoryQueryRequest.cs" />
+      <File FileName="Core/Application/CQRS/Queries/Category/GetAllCategory/GetAllCategoryQueryHandler.cs" />
+      <File FileName="Core/Application/CQRS/Queries/Person/GetPersonProduct/GetPersonProductQueryRequest.cs" />
+      <File FileName="Core/Application/CQRS/Queries/Person/GetPersonProduct/GetPersonProductQueryHandler.cs" />
+      <File FileName="Core/Application/CQRS/Queries/Product/GetAllProduct/GetAllProductQueryRequest.cs" />
+      <File FileName="Core/Application/CQRS/Queries/Product/GetAllProduct/GetAllProductQueryHandler.cs" />
+      <File FileName="Core/Application/CQRS/Queries/Product/GetProductCategory/GetProductCategoryQueryRequest.cs" Line="9" Column="3" />
+      <File FileName="Core/Application/CQRS/Queries/Product/GetProductCategory/GetProductCategoryQueryHandler.cs" Line="8" Column="94" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProductPersonProject" expanded="True">
+          <Node name="ProductPersonProject" expanded="True" selected="True">
             <Node name="Core" expanded="True">
               <Node name="Application" expanded="True">
                 <Node name="CQRS" expanded="True">
-                  <Node name="Commands" expanded="True">
-                    <Node name="Person" expanded="True">
-                      <Node name="CreatePerson" expanded="True" />
-                      <Node name="RemovePerson" expanded="True" />
-                    </Node>
+                  <Node name="Queries" expanded="True">
                     <Node name="Product" expanded="True">
-                      <Node name="RemoveProduct" expanded="True" />
+                      <Node name="GetProductCategory" expanded="True" />
                     </Node>
                   </Node>
                 </Node>
@@ -100,7 +107,6 @@
                   <Node name="Category" expanded="True" />
                   <Node name="Person" expanded="True" />
                   <Node name="Product" expanded="True" />
-                  <Node name="_ViewImports.cshtml" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -113,7 +119,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Presentation.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>

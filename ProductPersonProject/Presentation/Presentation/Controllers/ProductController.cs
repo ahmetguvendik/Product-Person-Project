@@ -2,6 +2,8 @@
 using Application.CQRS.Commands.Person.RemovePerson;
 using Application.CQRS.Commands.Product.CreateProduct;
 using Application.CQRS.Commands.Product.RemoveProduct;
+using Application.CQRS.Queries.Category.GetAllCategory;
+using Application.CQRS.Queries.Product.GetProductCategory;
 using Application.Repositories;
 using Application.Services;
 using MediatR;
@@ -15,25 +17,21 @@ namespace Presentation.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly ICategoryReadRepository _categoryReadRepository;
-        private readonly IProductService _productService;
         private readonly IMediator _mediator;
-        public ProductController(ICategoryReadRepository categoryReadRepository,IMediator mediator,IProductService productService)
+        public ProductController(IMediator mediator)
         {
-            _categoryReadRepository = categoryReadRepository;
             _mediator = mediator;
-            _productService = productService;
           
         }
-        public IActionResult GetProduct()
+        public async Task<IActionResult> GetProduct(GetProductCategoryQueryRequest model)
         {
-           var product =  _productService.GetProductCategory();
+            var product = await _mediator.Send(model);
             return View(product);
         }
 
-        public IActionResult AddProduct()
+        public async Task<IActionResult> AddProduct(GetAllCategoryQueryRequest model)
         {
-            var categories = _categoryReadRepository.GetAll();
+            var categories = await _mediator.Send(model);
             List<SelectListItem> values = (from c in categories.ToList() select new SelectListItem
             {
                 Text = c.Name,
@@ -48,7 +46,7 @@ namespace Presentation.Controllers
         [HttpPost]
         public async Task<IActionResult> AddProduct(CreateProductCommandRequest model)
         {
-            var response = await _mediator.Send(model);
+            await _mediator.Send(model);
             return RedirectToAction("GetProduct", "Product");
         }
 
